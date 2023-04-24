@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <link rel="shortcut icon" href="assets/imgs/favicon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Want an elegant looking and search engine optimized  website? Look no further, Chidebru Techs is here to do the heavy lifting for you.
+    <meta name="keywords" content="chidebru, chidebru techs, web, web developer, html, css, web design, software, software developer, Deusdarius, Chimoyi">
+    <meta name="author" content="Deusdarius Chimoyi">
+    <title>Chidebru Techs |  Web Developer </title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/vendors/fontaweome/css/all.min.css">
+    <link rel="stylesheet" href="assets/vendors/fontaweome/css/fontawesome.min.css">
+    <!-- Bootstrap + JohnDoe main styles -->
+	<link rel="stylesheet" href="css/chidebru.css">
+
+    <style>
+        #wrapper{
+            font-family: serif;
+            background-color: black;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .center {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .ring { 
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            animation: ring 5s linear infinite;
+        }
+        @keyframes ring {
+            0%  {
+                transform: rotate(0deg);
+                box-shadow: 1px 5px 2px #0013e6;
+            }
+            50%  {
+                transform: rotate(180deg);
+                box-shadow: 1px 5px 2px #fb780c;
+            }
+            100%  {
+                transform: rotate(360deg);
+                box-shadow: 1px 5px 2px #28c804;
+            }
+        }
+
+        .ring::after {
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+            box-shadow: 0 0 5px rgba(255, 255, 255, .3);
+        }
+        .loader-text {
+            color: #05f711;   
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            line-height: 200px;   
+            }
+            hr {
+                height: 4px !important;
+                color: white !important;
+            }
+    </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <div id="wrapper">
+        <div class="center">
+          <div class="ring"></div>
+          <span class="loader-text">Loading...</span>
+        </div>
+      </div>
+  
+    <header class="header">
+        <div class="container">
+            <ul class="social-icons pt-3">
+                <li title="Facebook" class="social-item" ><a class="social-link text-success" href="https://web.facebook.com/Chidebru-Techs-107309294322378"><i class="fa-brands fa-square-facebook"></i></a></li>
+                <li title="Twitter" class="social-item" ><a class="social-link text-success" href="https://twitter.com/ChidebruTechs"><i class="fa-brands fa-square-twitter"></i></a></li>
+                <li title="Linkedin" class="social-item" ><a class="social-link text-success" href="https://www.linkedin.com/in/deusdarius-chimoyi-1394a01b0/"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li title="Github" class="social-item" ><a class="social-link text-success" href="https://github.com/ChidebruTechs "><i class="fa-brands fa-square-github"></i></a></li>
+            </ul>  
+            <div class="header-content">
+                <h4 class="header-subtitle" >Welcome to:</h4>
+                <h1 class="header-title">Chidebru  </h1>
+                <h6 class="header-mono" >Web Developer </h6>
+                <button class="btn btn-success btn-rounded p-resume"><i class="fa-solid fa-download"></i><a href = "/assets/resume/Deusdarius Chimoyi CV.pdf" download >  Download Resume</a></button>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark" data-spy="affix" data-offset-top="510">
+         <a class="navbar-brand" href="index.html">
+    <img src="assets/imgs/Logo.png" alt="Chidebru Logo" style="width: 100px; height: fit-content;">
+  </a>
+        <div class="container">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#resume" class="nav-link">Skills</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav brand">
+                    <img src="assets/imgs/avatar.jpg" alt="Deusdarius Photo" class="brand-img">
+                    <li class="brand-txt">
+                        <h5 class="brand-title">Deusdarius</h5>
+                        <div class="brand-subtitle">Web Developer</div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link">Portfolio</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a href="#blog" class="nav-link">Blog</a>
+                    </li> -->
+                    <li class="nav-item last-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <h2 class="text-center text-dark p-4 mt-3 about-chidebru">About Chidebru Techs</h2>
+        <div id="about" class="row about-section">
+            <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light">Who is Chidebru?</h3>
+                <span class="line mb-5"></span>
+                <h5 class="mb-3">A Web Developer based in Kenya.</h5>
+                <p class="mt-20 info">Chimoyi Deusdarius Brunoh. It's out of the first letters of the names that  the name <span ><big>Chidebru</big></span>   the Brand Name emanates from. <span ><big>Techs</big></span>  is short for various technologies. I love problem-solving by virtue of  being able to think algorithmically (logically). I web design and development, mobile app development, digital marketing and recently fell in love with the blockchain technology
+                      
+                   </p>
+                <button class="btn btn-outline-success">Download My CV</button>
+            </div>
+            <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light">Personal Info</h3>
+                <span class="line mb-5"></span>
+                <ul class="mt40 info list-unstyled">
+                    <li><span>Date of Birth  : </span>   02/14/1993</li>
+                    <li><span>Email :</span>   chidebrutechs@gmail.com</li>
+                    <li><span>Phone :</span>   + (254) 703-247-820</li>
+                    <li><span>Skype :</span>   Chidebru</li>
+                    <li><span>Address :</span>   P. O Box 4622-4103 Kisumu-Kenya</li>
+                </ul>
+                <ul class="social-icons pt-3">
+                    <li title="Facebook" class="social-item" ><a class="social-link text-success" href="https://web.facebook.com/Chidebru-Techs-107309294322378"><i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li title="Twitter" class="social-item" ><a class="social-link text-success" href="https://twitter.com/ChidebruTechs"><i class="fa-brands fa-square-twitter"></i></a></li>
+                    <li title="Linkedin" class="social-item" ><a class="social-link text-success" href="https://www.linkedin.com/in/deusdarius-chimoyi-1394a01b0/"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li title="Github" class="social-item" ><a class="social-link text-success" href="https://github.com/ChidebruTechs "><i class="fa-brands fa-square-github"></i></a></li>
+                </ul>  
+            </div>
+            <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light">My Expertise</h3>
+                <span class="line mb-5"></span>
+                <div class="row">
+                    <div class="col-1  pt-1"><i class="fa-sharp fa-solid fa-globe icon-lg  text-success"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>Web Development</h6>
+                        <p class="subtitle">I buiid elegant looking responsive website, both static and backend.</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 text-success pt-1"><i class="fa-solid fa-mobile-screen-button icon-lg text-success"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>Mobile Apps Development</h6>
+                        <p class="subtitle">I also build mobile apps that are cross-platform with flutter to accompany the  web app.</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 text-success pt-1"><i class="fa-sharp fa-solid fa-location-dot  icon-lg text-success"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>Digital Marketing</h6>
+                        <p class="subtitle">Finally, I take your business to the right audience accross the globe at an affordable (negotiable) rate.</p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Resume Section-->
+    <section class="section" id="resume">
+        <div class="container">
+            <h2 class="mb-5 text-center"> Skills</h2>
+            <div class="row gx-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12 ">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="pull-left">
+                                    <h4 class="mt-2 skills">Technical Skills</h4>
+                                    <span class="line"></span>  
+                                </div>
+                            </div>
+                            <div class="card-body pb-2">
+                                <h6>HTML5/CSS3/JavaScript</h6>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 97%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <h6>Bootstrap</h6>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <h6>Django</h6>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 70%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <h6>MySQL</h6>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <h6>Rest API</h6>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <h6>Wordpress</h6>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 ">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="pull-left">
+                                    <h4 class="mt-2 skills">Soft Skills</h4>
+                                    <span class="line"></span>  
+                                </div>
+                            </div>
+                            <div class="card-body pb-2">
+                            <h6> Communication</h6>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 97%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <h6>Analytical thinking</h6>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <h6>Adabptablity</h6>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <h6>Self-motivation</h6>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <h6>Teamwork</h6>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <h6>Leadership </h6>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 ">
+                        <div class="card ">
+                        <div class="card-header">
+                                <div class="pull-left">
+                                    <h4 class="mt-2 skills">Languages</h4>
+                                    <span class="line"></span>  
+                                </div>
+                            </div>
+                            <div class="card-body pb-2">
+                            <h6>English</h6>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <h6>French</h6>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 35%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <h6>Swahili</h6>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section><hr>
+    <section class="section" id="service">
+        <div class="container">
+            <h2 class="mb-5 pb-4 text-success text-center"> Services</h2>
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                       <div class="card-header has-icon">
+                        <i class="text-dark"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-success">UX/UI Design</h5>
+                            <p class="subtitle">Chidebru designs a website that properly represents your company, and  makes it easy to use for all web visitors by taking into consideration the  appearance, layout, and contents of the site thus making the experience of using the products  enjoyable. 
+                        </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                       <div class="card-header has-icon">
+                        <i class="fa-solid fa-laptop-mobile text-dark"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-success">Responsive Web Design</h5>
+                            <P class="subtitle">Screen sizes are different, websites should adapt to all screen sizes today and  in future.  Chidebru techs designs website contents that adjust dynamically depending on screen size thus looking good on all devices (giant screens, desktops, laptops, tablets, and phones).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                       <div class="card-header has-icon">
+                            <i class="ti-support text-dark aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-success">SEO</h5>
+                            <P class="subtitle">Search engine optimization (SEO) makes your website recognozable by the search engine like Google. I make a websites that are fully optimized by  use of appropriate site description and keywords making them appear in the organic search engine results page (SERP).</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                       <div class="card-header has-icon">
+                            <i class="ti-map-alt text-dark aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-success">SPA</h5>
+                            <p class="subtitle">A single-page application (SPA) is a web application that interacts with the user by dynamically rewriting the current web page with new data from the web server  usually in response to user actions.  Instead of the  browser loading entire new pages, which makes it feel more like a native app.
+                               <p/>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                       <div class="card-header has-icon">
+                            <i class="ti-bar-chart text-dark" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-success">Landing Pages</h5>
+                            <p class="subtitle"> Chidebru designs landing pages with clear call-to-action (CTA) for increasing the conversion rates of an Online Store.  It’s where a visitor “lands” first  after clicking on a link in an ad from say Google, Bing, YouTube, Facebook, Instagram, Twitter, email or similar places on the web. 
+                            </>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                       <div class="card-header has-icon">
+                            <i class="ti-wordpress text-dark aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-success">CMS (WordPress)</h5>
+                            <p class="subtitle">A content management system (CMS) helps clients in updating their  websites without the need  to write  codes from scratch (or even know how to code at all). Chidebru Techs uses in WordPress sparingly   based on the customer requirement assessment. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="section bg-custom-gray" id="price">
+        <div class="container">
+            <h1 class="mb-5"><span class="text-danger">Packs</span> Pricing</h1>
+            <div class="row align-items-center">
+                <div class="col-md-6 col-lg-3">
+                    <div class="price-card text-center mb-4">
+                        <h3 class="price-card-title">Free</h3>
+                        <div class="price-card-cost">
+                            <sup class="ti-money"></sup>
+                            <span class="num">0</span>
+                            <span class="date">MO</span>
+                        </div>
+                        <ul class="list">
+                            <li class="list-item">5 <span class="text-muted">Project</span></li>
+                            <li class="list-item">1GB <span class="text-muted">Storage</span></li>
+                            <li class="list-item"><span class="text-muted">No Domain</span></li>
+                            <li class="list-item">1 <span class="text-muted">User</span></li>
+                        </ul>
+                        <button class="btn btn-primary btn-rounded w-lg">Subscribe</button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="price-card text-center mb-4">
+                        <h3 class="price-card-title">Basic</h3>
+                        <div class="price-card-cost">
+                            <sup class="ti-money"></sup>
+                            <span class="num">10</span>
+                            <span class="date">MO</span>
+                        </div>
+                        <ul class="list">
+                            <li class="list-item">50 <span class="text-muted">Project</span></li>
+                            <li class="list-item">10GB <span class="text-muted">Storage</span></li>
+                            <li class="list-item">1<span class="text-muted">Domain</span></li>
+                            <li class="list-item">5 <span class="text-muted">User</span></li>
+                        </ul>
+                        <button class="btn btn-primary btn-rounded w-lg">Subscribe</button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="price-card text-center price-card-requried mb-4">
+                        <h3 class="price-card-title">Exclusive</h3>
+                        <div class="price-card-cost">
+                            <sup class="ti-money"></sup>
+                            <span class="num">25</span>
+                            <span class="date">MO</span>
+                        </div>
+                        <ul class="list">
+                            <li class="list-item">150 <span class="text-muted">Project</span></li>
+                            <li class="list-item">15GB <span class="text-muted">Storage</span></li>
+                            <li class="list-item">5<span class="text-muted"> Domain</span></li>
+                            <li class="list-item">15<span class="text-muted">User</span></li>
+                        </ul>
+                        <button class="btn btn-primary btn-rounded w-lg">Subscribe</button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="price-card text-center mb-4">
+                        <h3 class="price-card-title">Pro</h3>
+                        <div class="price-card-cost">
+                            <sup class="ti-money"></sup>
+                            <span class="num">99</span>
+                            <span class="date">MO</span>
+                        </div>
+                        <ul class="list">
+                            <li class="list-item">500 <span class="text-muted">Project</span></li>
+                            <li class="list-item">1000GB <span class="text-muted">Storage</span></li>
+                            <li class="list-item">10<span class="text-muted"> Domain</span></li>
+                            <li class="list-item">Unlimite<span class="text-muted">User</span></li>
+                        </ul>
+                        <button class="btn btn-primary btn-rounded w-lg">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <section class="section bg-success py-3">
+        <div class="container text-center">
+            <h2 class="text-dark mb-5 font-weight-normal">I am also Freelancing</h2>
+            <button class="btn btn-rounded bg-dark text-light h2 w-lg" >Hire me</button>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="section bg-custom-gray" id="portfolio">
+        <div class="container">
+            <h2 class="mb-5 text-center"><span class="text-success">My</span> Portfolio</h2>
+            <div class="col-md-4">          
+                <h3 class="mt-3 mb-3 text-dark" >Collaborated on Usawa Quest Project</h3>
+                <a href="https://github.com/martinmutuku/usawa-quest.github.io"><img src="/assets/imgs/Usawa-logo.png"  height="150" alt="Usawa Quest Africa logo"></a>
+            </div>
+        </div>
+    </section>
+    <!-- End of portfolio section -->
+
+    <!-- <section class="section" id="blog">
+        <div class="container">
+            <h2 class="mb-5">Latest <span class="text-success">Blog</span></h2>
+            <div class="row">
+                <div class="blog-card">
+                    <div class="img-holder">
+                        <img src="assets/imgs/header.jpg" alt="">
+                    </div>
+                    <div class="content-holder">
+                        <h6 class="title">Consectetur adipisicing elit</h6>
+
+                        <p class="post-details">
+                            <a href="#">By: Admin</a>
+                            <a href="#"><i class="fa-regular fa-mobile-screen-button"></i> 234</a>
+                            <a href="#"><i class="ti-comment"></i> 123</a>
+                        </p>
+                        
+                        <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet nesciunt qui sit velit delectus voluptates, repellat ipsum culpa id deleniti. Rerum debitis facilis accusantium neque numquam mollitia modi quasi distinctio.</p>
+
+                        <p class="text-dark">Necessitatibus nihil impedit! Ex nisi eveniet, dolor aliquid consequuntur repudiandae.</p>
+                        <p class="text-light">Magnam in repellat enim harum omnis aperiam! Explicabo illo, commodi, dolor blanditiis cupiditate harum nisi vero accusamus laudantium voluptatibus dolores quae obcaecati.</p>
+
+                        <a href="#" class="read-more text-success">Read more <i class="ti-angle-double-right"></i></a>
+                    </div>
+                </div><!-- end of blog wrapper -->
+
+                <!-- blog-card -->
+                <!-- <div class="blog-card ">
+                    <div class="img-holder">
+                        <img src="assets/imgs/Usawa-logo.png" alt="">
+                    </div>
+                    <div class="content-holder">
+                        <h6 class="title">Explicabo illo</h6>
+
+                        <p class="post-details">
+                            <a href="#">By: Admin</a>
+                            <a href="#"><i class="ti-heart text-danger"></i> 456</a>
+                            <a href="#"><i class="ti-comment"></i> 264</a>
+                        </p>
+                        
+                        <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.</p>
+
+                        <a href="#" class="read-more text-success">Read more <i class="ti-angle-double-right"></i></a>
+                    </div>
+                </div>end of blog wrapper -->
+                <!-- blog-card
+                <div class="blog-card">
+                    <div class="img-holder">
+                        <img src="assets/imgs/blog3.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    </div>
+                    <div class="content-holder">
+                        <h4 class="title">Porro Quisqua</h4>
+
+                        <p class="post-details">
+                            <a href="#">By: Admin</a>
+                            <a href="#"><i class="ti-heart text-danger"></i> 431</a>
+                            <a href="#"><i class="ti-comment"></i> 312</a>
+                        </p>
+                        
+                        <p> consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.</p>
+
+                        <a href="#" class="read-more">Read more <i class="ti-angle-double-right"></i></a>
+                    </div>
+                </div><!-- end of blog wrapper
+
+            </div>
+        </div>
+    </section>  -->
+
+    <div class="section contact" id="contact">
+        <!-- <div id="map" class="map"></div>  -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="contact-form-card card">
+                        <h4 class="contact-title">Leave your Message</h4>
+                        <form action="https://formsubmit.co/5e92ff0ca471c7b6a597393ec11a3126" method="POST">
+                            <div class="form-group">
+                                <input  class="form-control" type="text" name="name" placeholder="Name *" required>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="email" name="email" placeholder="Email *" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" name="message" id=" placeholder="Message *" rows="7" required></textarea>
+                            </div>
+                            <div class="form-group ">
+                                <button type="submit" class="form-control btn btn-success text-dark h5" >Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="contact-info-card card">
+                        <h4 class="contact-title">Get in touch</h4>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="fa-solid fa-phone-volume text-dark"></i>
+                            </div>
+                            <div class="col-10 ">
+                                <h6 class="d-inline text-dark">Phone : <br> <span class="text-muted">+ (254) 703-247-820</span></h6>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="fa-solid fa-address-card text-dark"></i>
+                            </div>
+                            <div class="col-10">
+                                <h6 class="d-inline text-dark">Address :<br> <span class="text-muted"> P. O Box 4622-4103 Kisumu-Kenya</span></h6>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="fa-sharp fa-solid fa-envelope text-dark"></i>
+                            </div>
+                            <div class="col-10">
+                                <h6 class="d-inline text-dark">Email :<br> <span class="text-muted">chidebrutechs@gmail.com</span></h6>
+                            </div>
+                        </div>
+                        <ul class="social-icons pt-3">
+                            <li title="Facebook" class="social-item" ><a class="social-link text-success" href="https://web.facebook.com/Chidebru-Techs-107309294322378"><i class="fa-brands fa-square-facebook"></i></a></li>
+                            <li title="Twitter" class="social-item" ><a class="social-link text-success" href="https://twitter.com/ChidebruTechs"><i class="fa-brands fa-square-twitter"></i></a></li>
+                            <li title="Linkedin" class="social-item" ><a class="social-link text-success" href="https://www.linkedin.com/in/deusdarius-chimoyi-1394a01b0/"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li title="Github" class="social-item" ><a class="social-link text-success" href="https://github.com/ChidebruTechs "><i class="fa-brands fa-square-github"></i></a></li>
+                        </ul>  
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+    <footer class="footer py-3">
+        <div class="container text-center">
+            <p class=" mb-0 h6 text-light">
+                &copy; <script>document.write(new Date().getFullYear())</script> All Rights Reserved 
+            </p>
+        </div>
+    </footer>
+
+	<!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Isotope  -->
+    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+    
+    <!-- Google mpas -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
+
+    <!-- JohnDoe js -->
+    <script src="assets/js/chidebru.js"></script>
+
+    <script>
+        // $(window).on("load", function(){
+        //  $(".loader-wrapper").fadeOut('slow')
+        // });
+        document.onreadystatechange = function() {
+        if (document.readyState !== "complete") {
+            document.querySelector(
+              "body").style.visibility = "hidden";
+            document.querySelector(
+              "#wrapper").style.visibility = "visible";
+        } else {
+            document.querySelector(
+              "#wrapper").style.display = "none";
+            document.querySelector(
+              "body").style.visibility = "visible";
+        }
+    };
+</script>
+
+</body>
+</html>

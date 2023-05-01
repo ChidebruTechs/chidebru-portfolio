@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="assets/vendors/fontaweome/css/fontawesome.min.css">
     <!-- Bootstrap + JohnDoe main styles -->
 	<link rel="stylesheet" href="css/chidebru.css">
+    <!-- AOS CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <style>
         #wrapper{
@@ -90,16 +92,17 @@
     <header class="header">
         <div class="container">
             <ul class="social-icons pt-3">
-                <li title="Facebook" class="social-item" ><a class="social-link text-success" href="https://web.facebook.com/Chidebru-Techs-107309294322378" target="_blank"><i class="fa-brands fa-square-facebook" ></i></a></li>
-                <li title="Twitter" class="social-item" ><a class="social-link text-success" href="https://twitter.com/ChidebruTechs"  target="_blank"><i class="fa-brands fa-square-twitter"></i></a></li>
-                <li title="Linkedin" class="social-item" ><a class="social-link text-success" href="https://www.linkedin.com/in/deusdarius-chimoyi-1394a01b0/"  target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-                <li title="Github" class="social-item" ><a class="social-link text-success" href="https://github.com/ChidebruTechs "  target="_blank"><i class="fa-brands fa-square-github"></i></a></li>
+                <li title="Facebook" class="social-item" data-aos="fade-right" data-aos-duration="2000"><a class="social-link text-success" href="https://web.facebook.com/Chidebru-Techs-107309294322378" target="_blank"><i class="fa-brands fa-square-facebook" ></i></a></li>
+                <li title="Twitter" class="social-item" data-aos="fade-up" data-aos-duration="2000"><a class="social-link text-success" href="https://twitter.com/ChidebruTechs"  target="_blank"><i class="fa-brands fa-square-twitter"></i></a></li>
+                <li title="Linkedin" class="social-item" data-aos="fade-down" ><a class="social-link text-success" href="https://www.linkedin.com/in/deusdarius-chimoyi-1394a01b0/"  target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li title="Github" class="social-item" data-aos="fade-left" ><a class="social-link text-success" href="https://github.com/ChidebruTechs "  target="_blank"><i class="fa-brands fa-square-github"></i></a></li>
             </ul>  
             <div class="header-content">
                 <h4 class="header-subtitle" >Welcome to:</h4>
-                <h1 class="header-title">Chidebru  </h1>
+                <h1 data-aos="zoom-in" data-aos-duration="2000" class="header-title">Chidebru Techs </h1>
                 <h6 class="header-mono" >Web Developer </h6>
-                <button class="btn btn-success btn-rounded p-resume"><i class="fa-solid fa-download"></i><a href = "./assets/resume/Deusdarius Chimoyi CV.pdf" download >  Download Resume</a></button>
+                <button class="btn btn-success btn-rounded p-resume"  data-aos="zoom-out-up"
+                data-aos-duration="2500"><i class="fa-solid fa-download"></i><a href = "./assets/resume/Deusdarius Chimoyi CV.pdf" download >  Download Resume</a></button>
             </div>
         </div>
     </header>
@@ -113,7 +116,7 @@
             </button>
             <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
+                    <li class="nav-item" >
                         <a href="#home" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
@@ -145,16 +148,16 @@
         </div>
     </nav>
     <div class="container-fluid">
-        <h2 class="text-center text-dark p-4 mt-3 about-chidebru">About Chidebru Techs</h2>
-        <div id="about" class="row about-section">
+        <h2 class="text-center text-dark p-4 mt-3 about-chidebru" data-aos="fade-up-left"  data-aos-delay="300">About Chidebru Techs</h2>
+        <div id="about" class="row about-section" data-aos="fade-down"  data-aos-delay="1000" data-aos-duration="1500">
             <div class="col-lg-4 about-card">
                 <h3 class="font-weight-light">Who is Chidebru?</h3>
                 <span class="line mb-5"></span>
                 <h5 class="mb-3">A Web Developer based in Kenya.</h5>
-                <p class="mt-20 info">Chimoyi Deusdarius Brunoh. <span style="color:#23EB05;"><big>Chidebru</big></span>   the Brand Name emanates out of the first few characters of my actual names. Whereas, <span style="color:#23EB05;"><big>Techs</big></span>  is short for various technologies. I love problem-solving by virtue of  being able to think algorithmically (logically). I develope web apps, mobile apps,  and recently fell in love with the blockchain technology. I also do digital marketing.
+                <p class="mt-20 info">Chimoyi Deusdarius Brunoh. <span style="color:#23EB05;" data-aos="zoom-in"  data-aos-delay="2000"><big>Chidebru</big></span>   the Brand Name emanates out of the first few characters of my actual names. Whereas, <span data-aos="zoom-out"  data-aos-delay="2400" style="color:#23EB05;"><big>Techs</big></span>  is short for various technologies. I love problem-solving by virtue of  being able to think algorithmically (logically). I develope web apps, mobile apps,  and recently fell in love with the blockchain technology. I also do digital marketing.
                       
                    </p>
-                <button class="btn btn-outline-success"><a class="text-light" href = "./assets/resume/Deusdarius Chimoyi CV.pdf" download > Download  CV</a></button>
+                <button class="btn btn-outline-success" data-aos="zoom-out"  data-aos-delay="500" data-offset="1000"><a class="text-light" href = "./assets/resume/Deusdarius Chimoyi CV.pdf" download > Download  CV</a></button>
             </div>
             <div class="col-lg-4 about-card">
                 <h3 class="font-weight-light">Personal Info</h3>
@@ -167,17 +170,17 @@
                     <li><span>Address :</span>   P. O Box 4622-4103 Kisumu-Kenya</li>
                 </ul>
                 <ul class="social-icons pt-3">
-                    <li title="Facebook" class="social-item" ><a class="social-link text-success" href="https://web.facebook.com/Chidebru-Techs-107309294322378" target="_blank"><i class="fa-brands fa-square-facebook" ></i></a></li>
-                    <li title="Twitter" class="social-item" ><a class="social-link text-success" href="https://twitter.com/ChidebruTechs"  target="_blank"><i class="fa-brands fa-square-twitter"></i></a></li>
-                    <li title="Linkedin" class="social-item" ><a class="social-link text-success" href="https://www.linkedin.com/in/deusdarius-chimoyi-1394a01b0/"  target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-                    <li title="Github" class="social-item" ><a class="social-link text-success" href="https://github.com/ChidebruTechs "  target="_blank"><i class="fa-brands fa-square-github"></i></a></li>
+                    <li title="Facebook" class="social-item" ><a class="social-link text-success" href="https://web.facebook.com/Chidebru-Techs-107309294322378" target="_blank"><i class="fa-brands fa-square-facebook" data-aos="zoom-out-up"  data-aos-delay="300"></i></a></li>
+                    <li title="Twitter" class="social-item" ><a class="social-link text-success" href="https://twitter.com/ChidebruTechs"  target="_blank"><i class="fa-brands fa-square-twitter" data-aos="zoom-out-right"  data-aos-delay="600"></i></a></li>
+                    <li title="Linkedin" class="social-item" ><a class="social-link text-success" href="https://www.linkedin.com/in/deusdarius-chimoyi-1394a01b0/"  target="_blank"><i class="fa-brands fa-linkedin" data-aos="zoom-out-up"  data-aos-delay="900"></i></a></li>
+                    <li title="Github" class="social-item" ><a class="social-link text-success" href="https://github.com/ChidebruTechs "  target="_blank"><i class="fa-brands fa-square-github" data-aos="zoom-out-down"  data-aos-delay="1100"></i></a></li>
                 </ul>  
             </div>
             <div class="col-lg-4 about-card">
                 <h3 class="font-weight-light">My Expertise</h3>
                 <span class="line mb-5"></span>
                 <div class="row">
-                    <div class="col-1  pt-1"><i class="fa-sharp fa-solid fa-globe icon-lg  text-success"></i></div>
+                    <div class="col-1  pt-1"><i class="fa-sharp fa-solid fa-globe icon-lg  text-success" data-aos="zoom-out-up"  data-aos-delay="300"></i></div>
                     <div class="col-10 ml-auto mr-3">
                         <h6 class="h5">Web Development</h6>
                         <p class="subtitle">I buiid elegant looking responsive website, both static and backend.</p>
@@ -185,7 +188,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-1 text-success pt-1"><i class="fa-solid fa-mobile-screen-button icon-lg text-success"></i></div>
+                    <div class="col-1 text-success pt-1"><i class="fa-solid fa-mobile-screen-button icon-lg text-success" data-aos="zoom-out-left"  data-aos-delay="600"></i></div>
                     <div class="col-10 ml-auto mr-3">
                         <h6  class="h5">Mobile Apps Development</h6>
                         <p class="subtitle">I also build mobile apps that are cross-platform with flutter to accompany the  web app.</p>
@@ -193,7 +196,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-1 text-success pt-1"><i class="fa-sharp fa-solid fa-location-dot  icon-lg text-success"></i></div>
+                    <div class="col-1 text-success pt-1"><i class="fa-sharp fa-solid fa-location-dot  icon-lg text-success" data-aos="zoom-out-down"  data-aos-delay="900"></i></div>
                     <div class="col-10 ml-auto mr-3">
                         <h6  class="h5">Digital Marketing</h6>
                         <p class="subtitle">Finally, I take your business to the right audience accross the globe at an affordable (negotiable) rate.</p>
@@ -205,41 +208,41 @@
     </div>
 
     <!--Resume Section-->
-    <section class="section" id="resume">
+    <section class="section" id="resume" >
         <div class="container">
             <h2 class="mb-5 text-center"> Skills</h2>
-            <div class="row gx-4">
+            <div class="row gx-4" data-aos="fade-right"  data-aos-delay="1000">
                     <div class="col-lg-4 col-md-6 col-sm-12 ">
                         <div class="card">
                             <div class="card-header">
                                 <div class="pull-left">
-                                    <h4 class="mt-2 skills">Technical Skills</h4>
-                                    <span class="line"></span>  
+                                    <h4 class="mt-2 skills" data-aos="zoom-in-up"  data-aos-delay="1500">Technical Skills</h4>
+                                    <span class="line" data-aos="zoom-in-up"  data-aos-delay="2000"></span>  
                                 </div>
                             </div>
                             <div class="card-body pb-2">
                                 <h6>HTML5/CSS3/JavaScript</h6>
-                                <div class="progress mb-3">
+                                <div class="progress mb-3"  data-aos="zoom-out-up"  data-aos-delay="300">
                                     <div class="progress-bar bg-success" role="progressbar" style="width: 97%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                                 <h6>Bootstrap</h6>
-                                <div class="progress mb-3">
+                                <div class="progress mb-3" data-aos="zoom-out-right" data-aos-delay="500">
                                     <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                                 <h6>Django</h6>
-                                <div class="progress mb-3">
+                                <div class="progress mb-3" data-aos="zoom-out-down" data-aos-delay="700">
                                     <div class="progress-bar bg-success" role="progressbar" style="width: 70%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                                 <h6>MySQL</h6>
-                                <div class="progress mb-3">
+                                <div class="progress mb-3" data-aos="zoom-out-left" data-aos-delay="900">
                                     <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
-                                <h6>Rest API</h6>
-                                <div class="progress mb-3">
+                                <h6>reactJs</h6>
+                                <div class="progress mb-3" data-aos="zoom-out-up" data-aos-delay="1100">
                                     <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                                 <h6>Wordpress</h6>
-                                <div class="progress mb-3">
+                                <div class="progress mb-3" data-aos="zoom-out-right" data-aos-delay="1300">
                                     <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
@@ -249,33 +252,33 @@
                         <div class="card">
                             <div class="card-header">
                                 <div class="pull-left">
-                                    <h4 class="mt-2 skills">Soft Skills</h4>
-                                    <span class="line"></span>  
+                                    <h4 class="mt-2 skills" data-aos="zoom-in-right"  data-aos-delay="300">Soft Skills</h4>
+                                    <span class="line" data-aos="zoom-in-down"  data-aos-delay="2500"></span>  
                                 </div>
                             </div>
                             <div class="card-body pb-2">
                             <h6> Communication</h6>
-                                <div class="progress mb-3">
+                                <div class="progress mb-3" data-aos="zoom-out-up"  data-aos-delay="300">
                                     <div class="progress-bar bg-success" role="progressbar" style="width: 97%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                                 <h6>Analytical thinking</h6>
-                                <div class="progress mb-3">
+                                <div class="progress mb-3" data-aos="zoom-out-right"  data-aos-delay="500">
                                     <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                                 <h6>Adabptablity</h6>
-                                <div class="progress mb-3">
+                                <div class="progress mb-3" data-aos="zoom-out-down"  data-aos-delay="700">
                                     <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                                 <h6>Self-motivation</h6>
-                                <div class="progress mb-3">
+                                <div class="progress mb-3" data-aos="zoom-out-left"  data-aos-delay="900">
                                     <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                                 <h6>Teamwork</h6>
-                                <div class="progress mb-3">
+                                <div class="progress mb-3" data-aos="zoom-out-up"  data-aos-delay="1100">
                                     <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                                 <h6>Leadership </h6>
-                                <div class="progress mb-3">
+                                <div class="progress mb-3" data-aos="zoom-out-right"  data-aos-delay="1300">
                                     <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
@@ -285,21 +288,21 @@
                         <div class="card ">
                         <div class="card-header">
                                 <div class="pull-left">
-                                    <h4 class="mt-2 skills">Languages</h4>
-                                    <span class="line"></span>  
+                                    <h4 class="mt-2 skills" data-aos="zoom-in-down"  data-aos-delay="300">Languages</h4>
+                                    <span class="line" data-aos="zoom-in"  data-aos-delay="3000"></span>  
                                 </div>
                             </div>
                             <div class="card-body pb-2">
                             <h6>English</h6>
-                                <div class="progress mb-3">
+                                <div class="progress mb-3" data-aos="zoom-out-up"  data-aos-delay="300">
                                     <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                                 <h6>French</h6>
-                                <div class="progress mb-3">
+                                <div class="progress mb-3" data-aos="zoom-out-right"  data-aos-delay="500">
                                     <div class="progress-bar bg-success" role="progressbar" style="width: 35%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                                 <h6>Swahili</h6>
-                                <div class="progress mb-3">
+                                <div class="progress mb-3" data-aos="zoom-out-down"  data-aos-delay="700">
                                     <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
@@ -312,7 +315,7 @@
         <div class="container">
             <h2 class="mb-5 pb-4 text-success text-center"> Services</h2>
             <div class="row">
-                <div class="col-md-4 col-sm-6">
+                <div class="col-md-4 col-sm-6" data-aos="zoom-out-up"  data-aos-delay="500" data-aos-duration="1000">
                     <div class="card mb-5">
                        <div class="card-header has-icon">
                         <i class="text-dark"></i>
@@ -324,7 +327,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6">
+                <div class="col-md-4 col-sm-6" data-aos="zoom-out-up"  data-aos-delay="1000" data-aos-duration="1500">
                     <div class="card mb-5">
                        <div class="card-header has-icon">
                         <i class="fa-solid fa-laptop-mobile text-dark"></i>
@@ -336,7 +339,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6">
+                <div class="col-md-4 col-sm-6" data-aos="zoom-out-up"  data-aos-delay="1500" data-aos-duration="2000">
                     <div class="card mb-5">
                        <div class="card-header has-icon">
                             <i class="ti-support text-dark aria-hidden="true"></i>
@@ -347,7 +350,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6">
+                <div class="col-md-4 col-sm-6" data-aos="zoom-out-up"  data-aos-delay="500" data-aos-duration="1000">
                     <div class="card mb-5">
                        <div class="card-header has-icon">
                             <i class="ti-map-alt text-dark aria-hidden="true"></i>
@@ -359,7 +362,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6">
+                <div class="col-md-4 col-sm-6" data-aos="zoom-out-up"  data-aos-delay="1000" data-aos-duration="1500">
                     <div class="card mb-5">
                        <div class="card-header has-icon">
                             <i class="ti-bar-chart text-dark" aria-hidden="true"></i>
@@ -371,7 +374,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6">
+                <div class="col-md-4 col-sm-6" data-aos="zoom-out-up"  data-aos-delay="1500" data-aos-duration="2000">
                     <div class="card mb-5">
                        <div class="card-header has-icon">
                             <i class="ti-wordpress text-dark aria-hidden="true"></i>
@@ -462,7 +465,7 @@
             </div>
         </div>
     </section> -->
-    <section class="section bg-success py-3">
+    <section class="section bg-success py-3" data-aos="zoom-out-up"  data-aos-delay="1000" data-aos-duration="2200">
         <div class="container text-center">
             <h2 class="text-dark mb-5 font-weight-normal">I am also Freelancing</h2>
             <button class="btn btn-rounded bg-dark text-light h2 w-lg" ><a href="https://docs.google.com/forms/d/e/1FAIpQLSctUmXDWIO99w3errtfkltm__659oaOTgo_GMQMWTxa3I1EBg/viewform?usp=pp_url" target="_blank" class="h5 text-light"> Hire me</a></button>
@@ -470,7 +473,7 @@
     </section>
 
     <!-- Portfolio Section -->
-    <section class="section bg-custom-gray" id="portfolio">
+    <section class="section bg-custom-gray" id="portfolio" data-aos="zoom-in-up"  data-aos-delay="1500">
         <div class="container">
             <h2 class="mb-5 text-center"><span class="text-success">My</span> Portfolio</h2>
             <div class="col-md-4">          
@@ -554,7 +557,7 @@
         <!-- <div id="map" class="map"></div>  -->
         <div class="container">
             <div class="row">
-                <div class="col-lg-8">
+                <div class="col-lg-8" data-aos="flip-right"  data-aos-delay="1000">
                     <div class="card contact-form-card ">
                         <h4 class="contact-title">Leave your Message</h4>
                         <form action="https://formsubmit.co/5e92ff0ca471c7b6a597393ec11a3126 " method="POST">
@@ -573,7 +576,7 @@
                         </form>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4" data-aos="flip-left"  data-aos-delay="1000">
                     <div class="contact-info-card card ">
                         <h4 class="contact-title">Get in touch</h4>
                         <div class="row mb-2">
@@ -636,7 +639,8 @@
     
     <!-- Google mpas -->
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
-
+    <!-- AOS js CDN -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- JohnDoe js -->
     <script src="assets/js/chidebru.js"></script>
 
@@ -657,6 +661,11 @@
               "body").style.visibility = "visible";
         }
     };
+
+// Initialize AOS
+AOS.init({
+    duration: 1000
+});
 </script>
 
 </body>
